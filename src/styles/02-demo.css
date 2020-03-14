@@ -1,0 +1,36 @@
+.timer__wraper {
+  padding: 3em 0;
+}
+
+.timer__h1 {
+  font-size: 3em;
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+}
+
+.timer__text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.timer__counter {
+  position: relative;
+  padding: 15px 25px;
+  margin: 0 10px;
+  background-color: #4aa350;
+  border: 2px solid #388e3c;
+  z-index: 0;
+}
+
+.timer__counter::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background-color: #388e3c;
+  z-index: -1;
+}
+/*# sourceMappingURL=02-demo.css.map */

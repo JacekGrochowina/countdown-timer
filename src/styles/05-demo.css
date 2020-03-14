@@ -1,0 +1,23 @@
+.timer__wraper {
+  padding: 3em 0;
+}
+
+.timer__h1 {
+  font-size: 3em;
+  font-family: 'Lato', sans-serif;
+  color: #202020;
+}
+
+.timer__text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+
+.timer__counter {
+  padding: 15px 25px;
+  margin: 0 10px;
+  border: 2px solid #4d4d4d;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=05-demo.css.map */
