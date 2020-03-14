@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+
+    <style>
+        .timer__wraper {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        .timer__counter {
+            text-align: center;
+        }
+
+        .timer__text {
+            display: block;
+        }
+
+        .timer__wraper {
+            padding: 3em 0;
+        }
+
+        .timer__h1 {
+            font-size: 3em;
+            font-family: 'Lato', sans-serif;
+            color: #202020;
+            margin: 0.2em 0;
+        }
+
+        .timer__text {
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            color: #4d4d4d;
+        }
+
+        .timer__counter {
+            padding: 15px 25px;
+            border-right: 2px solid #4d4d4d;
+
+        }
+
+        .timer__counter:nth-last-of-type(1) {
+            border-right: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="section timer" id="timer-1">
+        <div class="timer__wraper">
+
+            <div class="timer__counter">
+                <h1 class="timer__h1 timer__h1--number" data-timer="days">00</h1>
+                <span class="timer__text">Days</span>
+            </div>
+
+            <div class="timer__counter">
+                <h1 class="timer__h1 timer__h1--number" data-timer="hours">00</h1>
+                <span class="timer__text">Hours</span>
+            </div>
+
+            <div class="timer__counter">
+                <h1 class="timer__h1 timer__h1--number" data-timer="minutes">00</h1>
+                <span class="timer__text">Minutes</span>
+            </div>
+
+            <div class="timer__counter">
+                <h1 class="timer__h1 timer__h1--number" data-timer="seconds">00</h1>
+                <span class="timer__text">Seconds</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="../src/js/countdown.js"></script>
+    <script>
+        const timer = new Timer("2020-04-30 18:18:18",
+            document.querySelector('#timer-1 h1[data-timer="days"]'),
+            document.querySelector('#timer-1 h1[data-timer="hours"]'),
+            document.querySelector('#timer-1 h1[data-timer="minutes"]'),
+            document.querySelector('#timer-1 h1[data-timer="seconds"]')
+        );
+        timer.init();
+    </script>
+</body>
+
+</html>
