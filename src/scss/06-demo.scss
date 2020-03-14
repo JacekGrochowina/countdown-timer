@@ -1,0 +1,27 @@
+.timer {
+    &__wraper {
+        padding: 3em 0;
+    }
+    &__h1 {
+        font-size: 2em;
+        font-family: 'Lato', sans-serif;
+        color: #202020;
+    }
+    &__text {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        color: #4d4d4d;
+    }
+    &__counter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 105px;
+        height: 105px;
+        padding: 20px 30px;
+        margin: 0 10px;
+        border: 2px solid #4d4d4d;
+        border-radius: 50%;
+    }
+}
