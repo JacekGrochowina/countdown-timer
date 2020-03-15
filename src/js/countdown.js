@@ -16,9 +16,10 @@ class Timer {
     }
     init() {
         this.insertToDOM();
-        setInterval(() => {
+        const interval = setInterval(() => {
             this.getCurrentDate();
             this.insertToDOM();
+            this.checkIsFinish(interval);
         }, 1000);
     }
     insertToDOM = () => {
@@ -29,6 +30,11 @@ class Timer {
         this.hoursDOM.textContent != this.getHours() ? this.hoursDOM.textContent = handleInsert(this.getHours()) : this.hoursDOM.textContent;
         this.minutesDOM.textContent != this.getMinutes() ? this.minutesDOM.textContent = handleInsert(this.getMinutes()) : this.minutesDOM.textContent;
         this.secondsDOM.textContent != this.getSeconds() ? this.secondsDOM.textContent = handleInsert(this.getSeconds()) : this.secondsDOM.textContent;
+    }
+    checkIsFinish = (interval) => {
+        if (this.finishDate - this.getCurrentDate() <= 1000) {
+            clearInterval(interval);
+        }
     }
     getDays() {
         return Math.floor((this.finishDate / (1000 * 60 * 60 * 24)) - (this.getCurrentDate() / (1000 * 60 * 60 * 24)));
