@@ -130,6 +130,22 @@ h3.default {
   color: #202020;
 }
 
+@media (max-width: 550px) {
+  .timer__h1 {
+    font-size: 15px !important;
+  }
+  .timer__text {
+    font-size: 12px;
+  }
+  .timer__counter {
+    padding: 12px 17px !important;
+  }
+  #timer-6 .timer__counter {
+    width: 81px !important;
+    height: 81px !important;
+  }
+}
+
 /*
  *  styles of examples pages.
  */
