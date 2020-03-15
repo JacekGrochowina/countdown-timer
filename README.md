@@ -8,6 +8,7 @@ Simple Countdown Timer.
 ##🔧 Getting Started
 
 ###CSS
+
 Add styles in `<head>`:
 
     <link rel="stylesheet" href="./path/to/01-demo.css" />
