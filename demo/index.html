@@ -423,13 +423,17 @@
 
     <script src="../src/js/countdown.js"></script>
     <script>
-        const timer = new Timer("2020-04-10 07:00:00",
+        const timer = new Timer("2020-04-10 10:21:40",
             document.querySelector('#timer-1 h1[data-timer="days"]'),
             document.querySelector('#timer-1 h1[data-timer="hours"]'),
             document.querySelector('#timer-1 h1[data-timer="minutes"]'),
             document.querySelector('#timer-1 h1[data-timer="seconds"]')
         );
+        if (timer.finishDate - timer.getCurrentDate() <= 0) {
+            timer.finishDate = timer.getCurrentDate() + 2678400000;
+        }
         timer.init();
+
 
         const timer2 = new Timer(
             "2020-05-23 02:03:52",
@@ -438,6 +442,9 @@
             document.querySelector('#timer-2 h1[data-timer="minutes"]'),
             document.querySelector('#timer-2 h1[data-timer="seconds"]')
         );
+        if (timer2.finishDate - timer2.getCurrentDate() <= 0) {
+            timer2.finishDate = timer2.getCurrentDate() + 2678400000;
+        }
         timer2.init();
 
         const timer3 = new Timer(
@@ -447,6 +454,9 @@
             document.querySelector('#timer-3 h1[data-timer="minutes"]'),
             document.querySelector('#timer-3 h1[data-timer="seconds"]')
         );
+        if (timer3.finishDate - timer3.getCurrentDate() <= 0) {
+            timer3.finishDate = timer3.getCurrentDate() + 2678400000;
+        }
         timer3.init();
 
         const timer4 = new Timer(
@@ -456,6 +466,9 @@
             document.querySelector('#timer-4 h1[data-timer="minutes"]'),
             document.querySelector('#timer-4 h1[data-timer="seconds"]')
         );
+        if (timer4.finishDate - timer4.getCurrentDate() <= 0) {
+            timer4.finishDate = timer4.getCurrentDate() + 2678400000;
+        }
         timer4.init();
 
         const timer5 = new Timer(
@@ -465,6 +478,9 @@
             document.querySelector('#timer-5 h1[data-timer="minutes"]'),
             document.querySelector('#timer-5 h1[data-timer="seconds"]')
         );
+        if (timer5.finishDate - timer5.getCurrentDate() <= 0) {
+            timer5.finishDate = timer5.getCurrentDate() + 2678400000;
+        }
         timer5.init();
 
         const timer6 = new Timer(
@@ -474,6 +490,9 @@
             document.querySelector('#timer-6 h1[data-timer="minutes"]'),
             document.querySelector('#timer-6 h1[data-timer="seconds"]')
         );
+        if (timer6.finishDate - timer6.getCurrentDate() <= 0) {
+            timer6.finishDate = timer6.getCurrentDate() + 2678400000;
+        }
         timer6.init();
     </script>
 </body>
