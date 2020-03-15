@@ -26,24 +26,24 @@ Add script right before closing  `</body>` tag:
 
 	<script src="./path/to/countdown.js"></script>
 	<script>
-			const timer = new Timer("yyyy-mm-dd hh:mm:ss",
-					selector-days,
-					selector-hours,
-					selector-minutes,
-					selector-seconds
-			);
+		const timer = new Timer("yyyy-mm-dd hh:mm:ss",
+			selector-days,
+			selector-hours,
+			selector-minutes,
+			selector-seconds
+		);
 	</script>
 
 ** EXAMPLE ⤵️**
 
 	<script src="./path/to/countdown.js"></script>
 	<script>
-			const timer = new Timer("2020-04-10 10:21:40",
-					document.querySelector('#timer-1 h1[data-timer="days"]'),
-					document.querySelector('#timer-1 h1[data-timer="hours"]'),
-					document.querySelector('#timer-1 h1[data-timer="minutes"]'),
-					document.querySelector('#timer-1 h1[data-timer="seconds"]')
-			);
+		const timer = new Timer("2020-04-10 10:21:40",
+			document.querySelector('#timer-1 h1[data-timer="days"]'),
+			document.querySelector('#timer-1 h1[data-timer="hours"]'),
+			document.querySelector('#timer-1 h1[data-timer="minutes"]'),
+			document.querySelector('#timer-1 h1[data-timer="seconds"]')
+		);
 	</script>
 
 This example is countdown to **10 April 2020, 10:21:40**. When you want set countdown to antoher date lets change it **string ("yyyy-mm-dd hh :mm :ss")**. Its all!
@@ -53,32 +53,32 @@ This example is countdown to **10 April 2020, 10:21:40**. When you want set coun
 Add to you your `<body>` tag: 
 
 	<section class="section timer" id="timer-1">
-			<div class="timer__wraper">
-					<div class="timer__counter">
-							<h1 class="timer__h1 timer__h1--number" data-timer="days">
-									00
-							</h1>
-							<span class="timer__text">Days</span>
-					</div>
-					<div class="timer__counter">
-							<h1 class="timer__h1 timer__h1--number" data-timer="hours">
-									00
-							</h1>
-							<span class="timer__text">Hours</span>
-					</div>
-					<div class="timer__counter">
-							<h1 class="timer__h1 timer__h1--number" data-timer="minutes">
-									00
-							</h1>
-							<span class="timer__text">Minutes</span>
-					</div>
-					<div class="timer__counter">
-							<h1 class="timer__h1 timer__h1--number" data-timer="seconds">
-									00
-							</h1>
-							<span class="timer__text">Seconds</span>
-					</div>
+		<div class="timer__wraper">
+			<div class="timer__counter">
+				<h1 class="timer__h1 timer__h1--number" data-timer="days">
+					00
+				</h1>
+				<span class="timer__text">Days</span>
 			</div>
+			<div class="timer__counter">
+				h1 class="timer__h1 timer__h1--number" data-timer="hours">
+					00
+				</h1>
+				<span class="timer__text">Hours</span>
+			</div>
+			<div class="timer__counter">
+				<h1 class="timer__h1 timer__h1--number" data-timer="minutes">
+					00
+				</h1>
+				<span class="timer__text">Minutes</span>
+			</div>
+			<div class="timer__counter">
+				<h1 class="timer__h1 timer__h1--number" data-timer="seconds">
+					00
+				</h1>
+				<span class="timer__text">Seconds</span>
+			</div>
+		</div>
 	</section>
 	
 **When you add:**
