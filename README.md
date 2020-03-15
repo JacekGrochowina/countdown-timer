@@ -1,13 +1,13 @@
 
-# Countdown Timer 🕜
+#Countdown Timer 🕜
 
 Simple Countdown Timer. 
 
-** 🔗 DEMO: http://projects.jacekcv.com/countdown-timer/ **
+**🔗 DEMO: http://projects.jacekcv.com/countdown-timer/**
 
 ##🔧 Getting Started
 
-### CSS
+###CSS
 Add styles in `<head>`:
 
     <link rel="stylesheet" href="./path/to/01-demo.css" />
@@ -34,7 +34,7 @@ Add script right before closing  `</body>` tag:
 		);
 	</script>
 
-** EXAMPLE ⤵️**
+**EXAMPLE ⤵️**
 
 	<script src="./path/to/countdown.js"></script>
 	<script>
@@ -49,7 +49,7 @@ Add script right before closing  `</body>` tag:
 This example is countdown to **10 April 2020, 10:21:40**. When you want set countdown to antoher date lets change it **string ("yyyy-mm-dd hh :mm :ss")**. Its all!
 
 -------------
-### HTML
+###HTML
 Add to you your `<body>` tag: 
 
 	<section class="section timer" id="timer-1">
